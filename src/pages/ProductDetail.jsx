@@ -96,7 +96,10 @@ export const ProductDetail = () => {
                 </p>
               </div>
               <div className="productdetail__card-bottom">
-                <button onClick={addItemToCart} className="home__checkout">
+                <button
+                  onClick={() => addItemToCart(shownProduct.id)}
+                  className="home__checkout"
+                >
                   Add to Cart
                 </button>
                 <p className="productdetail__card-description">
