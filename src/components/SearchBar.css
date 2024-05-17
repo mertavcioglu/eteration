@@ -1,0 +1,46 @@
+.searchBar__container {
+  position: relative;
+  flex: 1;
+}
+
+.searchBar__search {
+  width: 100%;
+  height: 36px;
+  font-size: 16px;
+  text-indent: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.searchBar__search:focus {
+  border: none;
+  outline: none;
+}
+
+.searchBar__search .ant-select-arrow {
+  background-image: none;
+}
+
+.searchBar__search .ant-select-selector {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.searchBar__icon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #000;
+  opacity: 0.6;
+  cursor: pointer;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 15px;
+}
