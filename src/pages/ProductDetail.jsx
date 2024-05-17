@@ -35,9 +35,9 @@ export const ProductDetail = () => {
     }, 1500);
   };
 
-  const addItemToCart = () => {
+  const addItemToCart = (productId) => {
     const updatedCartItems = cartItems.map((item) => {
-      if (item.id === shownProduct.id) {
+      if (item.id === productId) {
         return { ...item, quantity: item.quantity + 1 };
       }
       return item;
